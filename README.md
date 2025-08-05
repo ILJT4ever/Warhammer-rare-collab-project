@@ -75,3 +75,135 @@ cd warhammer-rare-collab-project
 
 📮 联系方式 / 问题反馈
 如有任何协作问题或爬虫问题，请联系仓库管理员或创建 Issue
+
+# 🧠 GitHub 项目新手协作指南（零基础入门版）
+
+适用于：**第一次接触编程或 GitHub 的新手协作者**，通过此文档你将学会如何加入我们的项目、设置环境、参与协作。
+
+---
+
+## ✅ 你需要准备：
+
+* 一台电脑（Windows 或 Mac）
+* 安装好 [GitHub Desktop](https://desktop.github.com/)
+* 安装好 [Python 3.9+](https://www.python.org/downloads/)
+* 安装好 [VS Code 编辑器](https://code.visualstudio.com/)（可选但强烈推荐）
+
+---
+
+## 第一步：加入我们的项目
+
+### 1.1 接受 GitHub 邀请
+
+1. 仓库管理员会通过你的 GitHub 用户名邀请你
+2. 登录 [GitHub官网](https://github.com/)，点击右上角铃铛🔔，**接受邀请**
+
+### 1.2 安装 GitHub Desktop（图形界面操作）
+
+1. 下载：[https://desktop.github.com/]
+2. 安装后登录你的 GitHub 账号
+3. 进入 GitHub Desktop → `File` → `Clone Repository`
+4. 找到项目 `warhammer-rare-collab-project`，选择位置后点击 `Clone`
+
+---
+
+## 第二步：创建运行环境（一次性设置）
+
+### 2.1 打开终端（Terminal / CMD）
+
+* Mac：打开 Terminal
+* Windows：使用 PowerShell 或 CMD
+
+### 2.2 创建虚拟环境
+
+```bash
+python3 -m venv venv
+```
+
+### 2.3 激活虚拟环境
+
+* Mac/Linux：
+
+```bash
+source venv/bin/activate
+```
+
+* Windows：
+
+```bash
+venv\Scripts\activate
+```
+
+### 2.4 安装项目所需库
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 第三步：运行程序看看效果
+
+```bash
+python3 main.py
+```
+
+程序会尝试抓取淘宝战锤模型的价格信息，并生成一个 Excel 表格：
+
+```
+outputs/all_prices.xlsx
+```
+
+---
+
+## 第四步：如何参与协作？
+
+### 4.1 用 GitHub Desktop 提交代码
+
+1. 在项目中修改文件（如填写一个爬虫）
+2. GitHub Desktop 会自动识别你做了修改
+3. 左下角填写：
+
+   * `Summary`（一行说明你改了啥）
+   * `Description`（可选，多行列出具体更改点）
+4. 点击 `Commit to main`
+5. 点击右上角 ⚠️`Push origin` ⚠️（‼️要在确保程序正常运行的情况下操作）上传到 GitHub
+
+### 4.2 不想要自己的修改了怎么办？
+
+在 GitHub Desktop → `Changes` 界面 → 点击右下角 `Discard all changes`，即可放弃本地更改。
+
+---
+
+## 第五步：开发建议
+
+* 项目结构已划分好，不要在根目录新建文件
+* 写代码请用中文注释
+* 每加一个新平台爬虫，新建一个文件如 `crawlers/xianyu.py`
+* 不懂就问，欢迎随时在群里提问
+
+---
+
+## 📮 常见问题（FAQ）
+
+### Q1：我从来没用过编程，怕出错怎么办？
+
+> 不用怕！你只是修改自己本地的副本，⚠️在没有push前⚠️，出错不会影响整体，任何东西都能撤回。
+
+### Q2：为什么我 push 的按钮是灰的？
+
+> 因为你还没有填写 `Summary`，在左下角写一句话就可以了。
+
+### Q3：为什么我运行 `main.py` 报错？
+
+> 可能是没安装依赖。请确认你运行了 `pip install -r requirements.txt`，并激活了虚拟环境。
+
+---
+
+## 🧩 建议（选做）
+
+* 学习 Git 原理：[https://learngitbranching.js.org/]
+* 学会用 VS Code / PyCharm打开项目，查看代码更方便
+* 用 markdown 写文档，增强你的协作能力
+
+---
