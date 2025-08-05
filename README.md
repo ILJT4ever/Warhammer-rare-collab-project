@@ -42,22 +42,35 @@ warhammer-rare-collab-project/
 
 ### 1️⃣ 创建并激活虚拟环境（推荐）
 
-```bash
 # 创建虚拟环境
+
+```bash
 python3 -m venv venv
+```
 
 # 激活虚拟环境（Mac / Linux）
+
+```bash
 source venv/bin/activate
+```
 
 ### 2️⃣ 安装依赖库
 
+```bash
 pip install -r requirements.txt
+```
 
 ### 3️⃣ 运行主程序，抓取淘宝数据
 
+```bash
 python3 main.py
+```
 
-结果将保存到：outputs/all_prices.xlsx
+结果将保存到：
+
+```bash
+outputs/all_prices.xlsx
+```
 
 🤝 协作规范（给所有开发者）
 所有新功能请在 crawlers/、utils/ 等对应目录中创建新的模块
@@ -75,6 +88,7 @@ cd warhammer-rare-collab-project
 
 📮 联系方式 / 问题反馈
 如有任何协作问题或爬虫问题，请联系仓库管理员或创建 Issue
+
 
 # 🧠 GitHub 项目新手协作指南（零基础入门版）
 
@@ -95,15 +109,19 @@ cd warhammer-rare-collab-project
 
 ### 1.1 接受 GitHub 邀请
 
+```bash
 1. 仓库管理员会通过你的 GitHub 用户名邀请你
 2. 登录 [GitHub官网](https://github.com/)，点击右上角铃铛🔔，**接受邀请**
+```
 
 ### 1.2 安装 GitHub Desktop（图形界面操作）
 
+```bash
 1. 下载：[https://desktop.github.com/]
 2. 安装后登录你的 GitHub 账号
 3. 进入 GitHub Desktop → `File` → `Clone Repository`
 4. 找到项目 `warhammer-rare-collab-project`，选择位置后点击 `Clone`
+```
 
 ---
 
@@ -111,8 +129,17 @@ cd warhammer-rare-collab-project
 
 ### 2.1 打开终端（Terminal / CMD）
 
-* Mac：打开 Terminal
-* Windows：使用 PowerShell 或 CMD
+* Mac：
+
+```bash
+打开 Terminal
+```
+
+* Windows：
+
+```bash
+使用 PowerShell 或 CMD
+```
 
 ### 2.2 创建虚拟环境
 
@@ -143,6 +170,8 @@ pip install -r requirements.txt
 ---
 
 ## 第三步：运行程序看看效果
+
+运行：
 
 ```bash
 python3 main.py
