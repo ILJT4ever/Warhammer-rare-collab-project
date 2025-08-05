@@ -1,2 +1,33 @@
-# Warhammer-rare-collab-project
- A collaboration project that allows users to track the historical pricing data globally on warhammer products that's rare on the market
+# 战锤稀有模型价格追踪项目
+
+本项目旨在自动抓取多个电商平台（如淘宝、闲鱼、eBay、Mercari）上绝版/稀有的战锤模型的在售和已售价格、型号、发布时间等信息，并将其结构化导出为 Excel 或 JSON 文件，方便模型收藏者、转卖者进行价格分析与比对。
+
+## 📁 项目结构
+warhammer-rare-collab-project/
+├── crawlers/ # 各平台爬虫脚本
+├── data/raw/ # 原始抓取数据（不纳入版本控制）
+├── outputs/ # 导出的对比价格表格
+├── utils/ # 通用工具函数（如模型名解析）
+├── main.py # 主入口，统一调度各平台爬虫
+├── requirements.txt # 所需依赖库列表
+├── .gitignore # 忽略上传的文件/目录设置
+├── LICENSE # MIT开源协议
+└── README.md # 项目说明文档
+
+## ✅ 功能规划
+
+- [x] 淘宝爬虫
+- [ ] 闲鱼爬虫
+- [ ] eBay / PicClick 爬虫
+- [ ] Mercari 日本平台爬虫
+- [ ] 模型名称、材质、状态的智能解析
+- [ ] 数据清洗与导出
+
+## 💡 使用说明
+
+开发中，敬请期待！
+
+## 🤝 协作方式
+
+本项目为多人合作，所有代码均需使用中文注释，并尽量模块化，方便维护。
+

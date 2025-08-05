@@ -1,0 +1,19 @@
+# 网络请求库，用于发送 HTTP 请求
+requests
+
+# 网页解析库，用于解析 HTML
+beautifulsoup4
+
+# 数据处理和表格导出
+pandas
+openpyxl  # 导出 .xlsx 文件用
+
+# 反爬常用头部处理
+fake-useragent
+
+# 如果需要动态加载淘宝页面（如登录、滑块验证码），可启用以下两项：
+selenium  # 浏览器驱动（适合需要登录的淘宝页面）
+webdriver-manager  # 自动安装 ChromeDriver
+
+# 可选：中文处理和去重（适合后期 SKU 解析）
+jieba
